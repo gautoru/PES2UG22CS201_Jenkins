@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'g++ -o output 201.cpp'  // Compile the C++ file
+                    sh 'g++ -o output program.cpp'
                 }
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './output'  // Run the compiled C++ program
+                    sh './output_wrong'  // Incorrect command to cause failure
                 }
             }
         }
