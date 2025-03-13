@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './output_wrong'  // Incorrect command to cause failure
+                    sh './output'  // Incorrect command to cause failure
                 }
             }
         }
