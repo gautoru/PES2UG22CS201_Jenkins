@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'main', url: 'https://github.com/<user>/<repo>.git'
+                git branch: 'main', url: 'https://github.com/gautoru/PES2UG22CS201_Jenkins'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'g++ main.cpp -o YOUR_SRN-1'
+                sh 'g++ 201.cpp -o YOUR_SRN-1'
             }
         }
 
